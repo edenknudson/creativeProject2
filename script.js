@@ -33,24 +33,24 @@ $(document).ready(function() {
        console.log(value);
 
        var count = 1;
-       findResults(count);
+       findResults(count,value);
 
 
         $("#NextButton").click(function(e) {
             count++;
-            findResults(count);
+            findResults(count,value);
         }
         $("#PrevButton").click(function(e) {
           if(count > 1){
             count--;
-            findResults(count);
+            findResults(count,value);
           }
 
         }
    });
 });
 
-function findResults(var count){
+function findResults(var count, var value){
 
   var sort = $("#ratingButton").checked;
   var sortLetter;
