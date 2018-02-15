@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Food for Thought</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+</head>
+
+
+<center>
+  <div id="top">
+
+    <img src="food_picture.JPG" id="foodPicture"/>
+    <h1>Food for Thought</h1>
+
+</div>
+</center>
+
+<div id="main">
+
+<center>
+  <p>We might have access to hundreds upon thousands of recipes today because of our friend google, but sometimes too much information is worse than no information at all. Use our database to not only search for recipes, but also sort those recipes to always get the best of the best for your health.</p>
+</center>
+
+
+<br>
+
+  <form class="col">
+    <center>
+    <b><label>Diet:</label></b>
+
+    <br>
+    <input type="radio" name="sorting" id="balancedButton" checked> Balanced (Protein/Fat/Carb values in 15/35/50 ratio)<br>
+    <input type="radio" name="sorting" id="proteinButton"> High-protein (More than 50% of total calories from proteins)<br>
+    <input type="radio" name="sorting" id="fatButton"> Low-fat (Less than 15% of total calories from fat)<br>
+    <input type="radio" name="sorting" id="carbButton"> Low-carb (Less than 20% of total calories from carbs)<br>
+    <input type="radio" name="sorting" id="noneDietButton"> None<br>
+</center>
+  </form>
+
+<br>
+
+  <form class="col">
+    <center>
+    <b><label>Health:</label></b>
+
+    <br>
+    <input type="radio" name="sorting" id="alcoholButton" checked> Alcohol-free (No alcohol used or contained)<br>
+    <input type="radio" name="sorting" id="peanutButton"> Peanut-free (No peanuts or products containing peanuts)<br>
+    <input type="radio" name="sorting" id="sugarButton"> Sugar-conscious (Less than 4g of sugar per serving)<br>
+    <input type="radio" name="sorting" id="veganButton"> Vegan (No meat, poultry, fish, dairy, eggs or honey)<br>
+    <input type="radio" name="sorting" id="vegetarianButton"> Vegetarian (No meat, poultry, or fish)<br>
+    <input type="radio" name="sorting" id="noneHealthButton"> None<br>
+</center>
+  </form>
+
+  <br>
+
+  <center>
+
+    <form>
+      <b><label>Search for Recipes</label></b>
+      <input id="foodInput" type="text"></input>
+      <br>
+      <br>
+      <input id="foodSubmit" type="submit" value="Submit" class="coolButton"></input>
+    </form>
+
+  </center>
+
+  <br>
+
+
+<center>
+  <div id="foodDisplay">
+  </div>
+</center>
+
+</div>
+
+<br>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js" text="type/javascript"></script>
+
+<footer>
+  <center><a href="https://github.com/edenknudson/creativeProject2">Visit my Github</a></center>
+</footer>
+
+</body>
+
+
+</html>
