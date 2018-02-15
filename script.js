@@ -92,7 +92,10 @@ function searchAll(value, diet, health){
               results += '<img src="' + json.hits[i].recipe.image + '"/>'
               results += '<br>';
               results += '<a href="' + json.hits[i].recipe.url + '"><b>Link to recipe</b></a>';
-              results += '<p><b>Calories</b>: ' + json.hits[i].recipe.calories + '</p>';
+              results += '<p><b>Calories</b>: ' + Math.round(json.hits[i].recipe.calories) + '</p>';
+	      results += '<p><b>Servings</b>: ' + json.hits[i].recipe.yield + '</p>';
+              results += '<p><b>Calories per Serving</b>: ' + Math.round(json.hits[i].recipe.calories / json.hits[i].recipe.yield) + '</p>';
+
               results += '<p><b>Ingredients</b>: ';
               for(j=0;j<json.hits[i].recipe.ingredients.length;j++){
                 results += json.hits[i].recipe.ingredients[j].text;
@@ -262,7 +265,10 @@ function searchDiet(value, diet){
               results += '<img src="' + json.hits[i].recipe.image + '"/>'
               results += '<br>';
               results += '<a href="' + json.hits[i].recipe.url + '"><b>Link to recipe</b></a>';
-              results += '<p><b>Calories</b>: ' + json.hits[i].recipe.calories + '</p>';
+              results += '<p><b>Calories</b>: ' + Math.round(json.hits[i].recipe.calories) + '</p>';
+              results += '<p><b>Servings</b>: ' + json.hits[i].recipe.yield + '</p>';
+              results += '<p><b>Calories per Serving</b>: ' + Math.round(json.hits[i].recipe.calories / json.hits[i].recipe.yield) + '</p>';
+
               results += '<p><b>Ingredients</b>: ';
               for(j=0;j<json.hits[i].recipe.ingredients.length;j++){
                 results += json.hits[i].recipe.ingredients[j].text;
@@ -432,7 +438,10 @@ function searchHealth(value, health){
               results += '<img src="' + json.hits[i].recipe.image + '"/>'
               results += '<br>';
               results += '<a href="' + json.hits[i].recipe.url + '"><b>Link to recipe</b></a>';
-              results += '<p><b>Calories</b>: ' + json.hits[i].recipe.calories + '</p>';
+              results += '<p><b>Calories</b>: ' + Math.round(json.hits[i].recipe.calories) + '</p>';
+              results += '<p><b>Servings</b>: ' + json.hits[i].recipe.yield + '</p>';
+              results += '<p><b>Calories per Serving</b>: ' + Math.round(json.hits[i].recipe.calories / json.hits[i].recipe.yield) + '</p>';
+
               results += '<p><b>Ingredients</b>: ';
               for(j=0;j<json.hits[i].recipe.ingredients.length;j++){
                 results += json.hits[i].recipe.ingredients[j].text;
@@ -602,7 +611,10 @@ function searchNone(value){
               results += '<img src="' + json.hits[i].recipe.image + '"/>'
               results += '<br>';
               results += '<a href="' + json.hits[i].recipe.url + '"><b>Link to recipe</b></a>';
-              results += '<p><b>Calories</b>: ' + json.hits[i].recipe.calories + '</p>';
+              results += '<p><b>Calories</b>: ' + Math.round(json.hits[i].recipe.calories) + '</p>';
+              results += '<p><b>Servings</b>: ' + json.hits[i].recipe.yield + '</p>';
+              results += '<p><b>Calories per Serving</b>: ' + Math.round(json.hits[i].recipe.calories / json.hits[i].recipe.yield) + '</p>';
+
               results += '<p><b>Ingredients</b>: ';
               for(j=0;j<json.hits[i].recipe.ingredients.length;j++){
                 results += json.hits[i].recipe.ingredients[j].text;
